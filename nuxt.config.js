@@ -27,7 +27,6 @@ export default {
   plugins: [
   ],
 
-
   // https://image.nuxtjs.org/api/options/
   image: {
     domains: ['https://storage.googleapis.com'],

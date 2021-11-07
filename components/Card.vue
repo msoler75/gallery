@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white text-gray-dark-700 flex flex-col rounded-lg overflow-hidden transition duration-500 shadow-lg"
+  <div class="bg-white text-gray-dark-700 flex flex-col overflow-hidden transition duration-500 shadow-lg"
   :class="center?'text-center':''"
   :clicked="clicked"
   >

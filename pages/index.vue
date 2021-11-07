@@ -1,44 +1,67 @@
 <template>
-  <div class="p-5 sm:p-10 md:p-16 lg:p-20">
+  <div class="p-5 sm:p-10 md:p-16 lg:p-20 h-full flex-grow">
     <h1 class="text-center text-3xl font-bold font-sans my-5">Galería de Arte TSEYOR</h1>
     <h2 class="text-center text-lg italic mb-12">Edición 2021</h2>
 
     <div id="fb-root"></div>
     <Grid>
-      <Card v-for="(item, index) of items" :key="item.url" class="bg-gray rounded overflow-hidden">
-        <div class="h-60 overflow-hidden">
+      <Card v-for="(item, index) of items" :key="index" class="bg-gray text-center">
+        <div class="h-60 overflow-hidden cursor-pointer" @click="mostrarImagen(index)">
           <nuxt-img :src="item.url" fit="cover" sizes="100vw xs:300px" />
         </div>
-        <div 
-        class="select-none transition duration-200 font-semibold py-2 px-4 border rounded-lg shadow border-blue-800 !text-blue-contrast text-center cursor-pointer"
-        @click="mostrarImagen(index)">Mostrar</div>
-        <Modal v-model="item.mostrando" :title="item.titulo">
-          <div @click="mostrarImagen((index+1)%items.length)" class="cursor-pointer rounded-full w-12 h-12 flex justify-center items-center z-50 fixed inset-y-1/2 right-2 sm:right-8 bg-black text-white text-lg font-bold opacity-50 hover:opacity-100">&gt;</div>
-          <div @click="mostrarImagen((index-1+items.length)%items.length)" class="cursor-pointer rounded-full w-12 h-12 flex justify-center items-center z-50 fixed inset-y-1/2 left-2 sm:left-8 bg-black text-white text-lg font-bold opacity-50 hover:opacity-100">&lt;</div>
-          <figure class="overflow-scroll">
-            <nuxt-img :src="item.url" fit="contain" class="mx-auto h-[50vh]" />
-            <figcaption>
-              <div>
-                <div>{{ item.descripcion }}</div>
-              </div>
-              <div>
-                <div>{{ item.autor }}</div>
-              </div>
-            </figcaption>
-            <div class="w-full sm:max-w-[640px] sm:w-[640px]">
-              <TelegramComments v-if="social" :url="item.url"/>
-              <div class="fb-comments" :data-href="item.url" data-width="640" data-numposts="5"/>
-            </div>
-          </figure>
-        </Modal>
+        <div
+          @click="mostrarImagen(index)"
+          class="select-none my-2 text-lg cursor-pointer font-bold"
+        >{{ item.titulo }}</div>
+        <div class="select-none my-2 italic mb-4">{{ item.autor }}</div>
       </Card>
     </Grid>
+
+    <Modal
+      v-for="(item, index) of items"
+      :key="index"
+      v-model="item.mostrando"
+      classes="w-screen h-screen"
+    >
+      <figure class="overflow-auto flex flex-col lg:flex-row w-full h-full">
+        <div class="relative flex-grow w-full flex justify-center items-center bg-gray-900">
+          <nuxt-img :src="item.url" fit="contain" style="max-height: 84vh" />
+          <div
+            @click="mostrarImagen((index + 1) % items.length)"
+            class="cursor-pointer rounded-full w-12 h-12 flex justify-center items-center z-50 absolute inset-y-1/2 right-2 sm:right-8 bg-black text-white text-lg font-bold opacity-50 hover:opacity-100"
+          >&gt;</div>
+          <div
+            @click="mostrarImagen((index - 1 + items.length) % items.length)"
+            class="cursor-pointer rounded-full w-12 h-12 flex justify-center items-center z-50 absolute inset-y-1/2 left-2 sm:left-8 bg-black text-white text-lg font-bold opacity-50 hover:opacity-100"
+          >&lt;</div>
+        </div>
+        <figcaption
+          class="text-lg flex-grow-0 w-full lg:w-[600px] space-y-12 bg-white p-2 sm:p-7 lg:p-12"
+        >
+          <div class="space-y-7">
+            <div class="title">
+              <h1 class="text-2xl font-bold font-serif">{{ item.titulo }}</h1>
+            </div>
+            <div class="description">
+              <div>{{ item.descripcion }}</div>
+            </div>
+            <div class="autor">
+              <div class="text-right">@{{ item.autor }}</div>
+            </div>
+          </div>
+          <div class="w-full max-w-full">
+            <TelegramComments v-if="social" class="w-full" :url="item.url" />
+            <div class="fb-comments" :data-href="item.url" data-width="640" data-numposts="5" />
+          </div>
+        </figcaption>
+      </figure>
+    </Modal>
   </div>
 </template>
 
 <script>
 
-const social = false;
+const social = true;
 
 export default {
   async fetch() {
@@ -77,15 +100,23 @@ export default {
     }
   },
   mounted() {
-    for(const item of this.items)
-       this.$set(item, 'mostrando',  false)
+    for (const item of this.items)
+      this.$set(item, 'mostrando', false)
   },
   methods: {
     mostrarImagen(idx) {
       for (const item of this.items)
         item.mostrando = false
-      this.$set(this.items[idx], 'mostrando',  true)
+      this.$set(this.items[idx], 'mostrando', true)
     }
   }
 }
 </script>
+
+<style scoped>
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+figcaption .description {
+  font-family: "Dancing Script", cursive;
+}
+</style>
