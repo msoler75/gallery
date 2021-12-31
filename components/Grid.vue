@@ -1,12 +1,12 @@
 <template>
-    <section class="grid gap-4">
+    <section class="grid gap-4 justify-center">
         <slot />
     </section>
 </template>
 
 <style scoped>
 .grid:not([class*="grid-cols-"]) {
-    grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(24rem, max-content));
 }
 
 .grid-cols-fit-w-10 {

@@ -1,36 +1,41 @@
 <template>
-    <div :style="imageBg" class="h-full flex-grow">
-        <nuxt/>
+    <div :style="imageBg" class="h-full w-full bg-fixed flex-grow" id="main">
+        <a
+            class="inline-block py-1 px-3 m-9 rounded-lg hover:bg-blue-100 shadow bg-white w-auto"
+            href="https://tseyor.org/utg"
+        >&lt;&nbsp; TSEYOR.ORG</a>
+        <nuxt />
     </div>
 </template>
 
 
 <script>
 export default {
-    data(){
-        return {
-            imageBgUrl: "/bg.jpg",
-        }
-    },
     computed: {
-     imageBg () {
-      const imgUrl = this.$img(this.imageBgUrl, { width: '100%', fit: 'cover', format: 'webp', quality: 85 })
-      return {
-        backgroundImage: `url('${imgUrl}')`,
-        backgroundPosition: 'center',
-        backgroundSize: 'cover'
-      }
-    }
+        imageBg() {
+            return {
+                background: 'rgb(250,253,255)',
+                background: 'linear-gradient(184deg, rgba(250,253,255,1) 0%, rgba(148,187,233,1) 100%)'
+            }
+        }
     }
 }
 </script>
 
 <style>
-html, body {
-    margin: 0; 
-    padding:0
+html,
+body {
+    margin: 0;
+    padding: 0;
 }
 
-body, #__nuxt, #__layout {min-height: 100vh}
-#__layout {display: flex; flex-direction: column}    
+body,
+#__nuxt,
+#__layout {
+    min-height: 100vh;
+}
+#__layout {
+    display: flex;
+    flex-direction: column;
+}
 </style>

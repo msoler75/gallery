@@ -1,9 +1,11 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
+ //  ssr: false,
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
+
+  
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -54,16 +56,18 @@ export default {
     // https://go.nuxtjs.dev/stylelint
      // '@nuxtjs/stylelint-module',
     // 'nuxt-windicss',
+    // '@nuxt/content',
     '@nuxtjs/tailwindcss'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
+    // '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     // '@nuxtjs/pwa',
-    '@nuxt/image',
+    // '@nuxt/image',
+    'vue-scrollto/nuxt'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -76,7 +80,29 @@ export default {
     }
   },
 
+  publicRuntimeConfig: {
+    basePathImages: 'http://localhost/images/utg/arte/convocatoria2021/'
+  },
+
+  router: {
+    base: '/utg/arte/convocatoria2021/'
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+
+    /*analyze: {
+      analyzerMode: 'static'
+    },*/
+
+      // publicPath: 'http://localhost/utg/arte/convocatoria2021',
+
+      /*
+      ** You can extend webpack config here
+      */
+      extend(config, ctx) {
+        // para hacer mejor el debug
+        // config.devtool = '#eval-source-map'
+      }
   }
 }

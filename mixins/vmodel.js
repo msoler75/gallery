@@ -10,6 +10,7 @@ export default {
   },
   watch: {
     localValue (value) {
+      console.log('LOCALVALUE', value)
       this.$emit('input', value)
     },
     value (value) {
