@@ -5,7 +5,7 @@
     <div
       v-if="ruta"
       class="text-leftmax-w-full mx-auto -translate-y-10 cursor-pointer hover:text-underline inline-block py-1 px-3 m-9 rounded-lg hover:bg-blue-100 shadow bg-white w-auto"
-      @click="ruta = rutaPadre"
+      @click="cambiarRuta(rutaPadre)"
     >&lt; Volver</div>
     <client-only>
       <Galeria :items="actualItems" @change="onRuta" :showAuthor="!categoriaAutor" />
@@ -45,10 +45,30 @@ export default {
     if (process.client) {
       this.items = itemsjson
     }
+    if(process.client) {
+      window.addEventListener('popstate', this.handlePopState)
+    };
+  },
+  destroyed() {
+    if(process.client) {
+      window.removeEventListener('popstate', this.handlePopState)
+    };
+  },
+  mounted(){
+    var stateObj = { rutaPrevia: this.ruta }
+      history.replaceState(stateObj, 'Galería')
   },
   methods: {
-    onRuta(ruta) {
+    handlePopState(g) {
+      this.ruta = g.state.rutaPrevia
+    },
+    cambiarRuta(ruta) {
       this.ruta = ruta
+      var stateObj = { rutaPrevia: this.ruta }
+      history.pushState(stateObj, 'Galería')
+    },
+    onRuta(ruta) {
+      this.cambiarRuta(ruta)
     },
     collectImages(items) {
       let r = []
