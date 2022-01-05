@@ -42,20 +42,20 @@
                     >{{ item.autor }}</div>
                 </div>
 
-                <Modal :show="viendo === index" class="overflow-auto w-screen h-screen" @close="cerrarModales()">
+                <Modal :show="viendo === index" class="overflow-auto w-screen h-screen" @close="viendo=-1">
                     <figure
-                        class="flex flex-col lg:flex-row w-full relative"
+                        class="flex flex-col lg:flex-row w-full lg:h-full relative"
                     >
                         <div
                             @click.stop="mostrarImagen((index + 1) % N)"
-                            class="cursor-pointer rounded-full w-12 h-12 flex justify-center items-center z-50 fixed bottom-9 lg:bottom-[45%] right-2 lg:right-[520px] sm:right-8 bg-black text-white text-lg font-bold opacity-20 hover:opacity-100"
+                            class="cursor-pointer rounded-full w-12 h-12 flex justify-center items-center z-50 fixed bottom-9 lg:bottom-3 right-2 lg:right-[520px] sm:right-8 bg-black text-white text-lg font-bold opacity-20 lg:opacity-50 hover:opacity-100"
                         >&gt;</div>
                         <div
                             @click.stop="mostrarImagen((index - 1 + N) % N)"
-                            class="cursor-pointer rounded-full w-12 h-12 flex justify-center items-center z-50 fixed bottom-9 lg:bottom-[45%] left-2 sm:left-8 bg-black text-white text-lg font-bold opacity-20 hover:opacity-100"
+                            class="cursor-pointer rounded-full w-12 h-12 flex justify-center items-center z-50 fixed bottom-9 lg:bottom-3 left-2 sm:left-8 bg-black text-white text-lg font-bold opacity-20 lg:opacity-50 hover:opacity-100"
                         >&lt;</div>
                         <VerticalCenter
-                            class="flex-shrink-0 image-container w-full bg-gray-900 height-88vh lg:height-100vh"
+                            class="flex-shrink-0 image-container w-full lg:flex-shrink lg:flex-grow bg-gray-900 height-88vh lg:height-100vh"
                         >
                             <LoaderImage
                                 :src="item.url"
@@ -66,7 +66,7 @@
                             />
                         </VerticalCenter>
                         <figcaption
-                            class="text-lg flex-grow-0 max-w-full mx-auto w-[600px] space-y-12 bg-white p-2 sm:p-7 lg:p-12 h-full"
+                            class="text-lg flex-grow-0 flex-shrink-0 max-w-full mx-auto lg:w-[500px] lg:overflow-y-auto space-y-12 bg-white p-2 sm:p-7 lg:p-12 h-full"
                         >
                             <div class="space-y-3 sm:space-y-7">
                                 <div if="item.titulo" class="title">
@@ -169,9 +169,6 @@ export default {
             this.viendo = index
             this.imagenSiguiente = (index + 1) % this.N
             this.imagenAnterior = (index - 1 + this.N) % this.N
-        },
-        cerrarModales() {
-            this.viendo = -1
         },
     }
 }
