@@ -22,12 +22,12 @@ export default {
         s.setAttribute("data-page-id", this.url)
         s.setAttribute("data-dislikes", "1")
         s.setAttribute("data-outlined", "1")
-        console.log(this.$refs)
+        s.setAttribute("data-height", "500px")
         this.scr = s
         this.$el.appendChild(s)
     },
     beforeUnmount() {
-        this.scr.parentNode.removeChild(this.scr)
+        this.scr.remove()
     }
 }
 </script>

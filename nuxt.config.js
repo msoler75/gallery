@@ -6,6 +6,9 @@ export default {
   target: 'static',
 
   
+  server: {
+    port: 51234 // default: 3000
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -30,7 +33,7 @@ export default {
   ],
 
   // https://image.nuxtjs.org/api/options/
-  image: {
+  /* image: {
     domains: ['https://storage.googleapis.com'],
     // format: 'webp',
     // dir: Path.resolve(__dirname, 'static'),
@@ -46,7 +49,7 @@ export default {
       xxl: 1536,
       '2xl': 1536
     },
-  },
+  }, */
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -81,11 +84,11 @@ export default {
   },
 
   publicRuntimeConfig: {
-    basePathImages: 'http://localhost/images/utg/arte/convocatoria2021/'
+    basePathImages: process.env.PUBLIC_IMAGES_FOLDER_URL || 'http://localhost/images/utg/arte/convocatoria2021/'
   },
 
   router: {
-    base: '/utg/arte/convocatoria2021/'
+    // base: process.env.BASE_ROUTE_PATH || '/utg/arte/convocatoria2021/'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

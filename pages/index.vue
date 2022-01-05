@@ -48,7 +48,6 @@ export default {
   },
   methods: {
     onRuta(ruta) {
-      console.log('NUEVA RUTA', ruta)
       this.ruta = ruta
     },
     collectImages(items) {
@@ -67,24 +66,17 @@ export default {
       return images[i]
     },
     expandItems(items) {
-      console.log('expandItems', JSON.stringify(items).substr(0, 50))
       let r = {}
-      console.log('type is', typeof items)
-      if (typeof items === 'string') console.log(items.substr(0, 32))
       //else 
       if (typeof items === 'object')
         for (const key in items) {
-          console.log('key', key, typeof key)
           if (typeof key === 'string' && !key.match(/^\d+$/)) {
-            console.log(key, 'es una carpeta')
             r[key] = this.expandItems(items[key])
           }
           else {
             const item = items[key]
-            console.log(key, 'es una imagen:', item)
             // r[key] = []
             if (item['folder']) {
-              console.log('son varias imagenes en', item.folder)
               let i = 10000
               for (const idx in item['images']) {
                 const img = item['images'][idx]
@@ -92,8 +84,6 @@ export default {
                 delete elem.folder
                 delete elem.images
                 elem.url = item['folder'] + '/' + img
-                // console.log('agregado elem', elem)
-                // this.prepareImages(elem)
                 r[i++] = elem
               }
             }
@@ -122,7 +112,6 @@ export default {
       else {
         let current = this.expandedItems
         const parts = this.ruta.split('/').filter(x => !!x)
-        console.log('TITULO?', parts)
         let key = parts.pop()
         for (const key of parts)
           current = current[key]
@@ -150,9 +139,7 @@ computed: {
       for (const key of parts)
         current = current[key]
     }
-    console.log('CURRENT', current)
     for (const key in current) {
-      console.log('*key', key, typeof key)
       if (typeof key === 'string' && !key.match(/^\d+$/)) {
         const [title, author] = key.split('@')
         this.isFolder = true

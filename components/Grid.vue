@@ -6,7 +6,7 @@
 
 <style scoped>
 .grid:not([class*="grid-cols-"]) {
-    grid-template-columns: repeat(auto-fit, minmax(24rem, max-content));
+    grid-template-columns: repeat(auto-fit, minmax(16rem, max-content));
 }
 
 .grid-cols-fit-w-10 {

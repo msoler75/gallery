@@ -1,5 +1,5 @@
 <template>
-    <Grid :class="viendo > -1 ? 'overflow-hidden' : 'overflow-y-auto'">
+    <Grid :class="viendo > -1 ? 'h-0 overflow-hidden' : 'overflow-y-auto'">
         <Card v-for="(item, index) of itemsPrepared" :key="index" class="bg-gray text-center">
             <div
                 v-if="'ruta' in item"
@@ -20,52 +20,53 @@
                 </h4>
             </div>
 
-            <div
-                v-else
-                class="h-full flex flex-col items-center justify-center cursor-pointer"
-                @click="mostrarImagen(index)"
-            >
-                <div class="h-60 overflow-hidden cursor-pointer">
-                    <LoaderImage
-                        :src="item.url"
-                        loading="lazy"
-                        class="h-70 bg-white"
-                        :width="Math.min(width, 400)"
-                        :height="330"
-                        :crop="true"
-                    />
-                </div>
-                <div class="select-none my-2 text-lg cursor-pointer font-bold">{{ item.titulo }}</div>
+            <template v-else>
                 <div
-                    class="select-none my-2 italic mb-4"
-                    v-if="showAuthor && item.autor"
-                >{{ item.autor }}</div>
+                    class="h-full flex flex-col items-center justify-start cursor-pointer"
+                    @click="mostrarImagen(index)"
+                >
+                    <div class="h-60 overflow-hidden cursor-pointer">
+                        <LoaderImage
+                            :src="item.url"
+                            loading="lazy"
+                            class="h-70 bg-white"
+                            :width="Math.min(width, 400)"
+                            :height="330"
+                            :crop="true"
+                        />
+                    </div>
+                    <div class="select-none my-2 text-lg cursor-pointer font-bold">{{ item.titulo }}</div>
+                    <div
+                        class="select-none my-2 italic mb-4"
+                        v-if="showAuthor && item.autor"
+                    >{{ item.autor }}</div>
+                </div>
 
-                <Modal :show="viendo === index" class="w-screen h-screen" @close="cerrarModales()">
+                <Modal :show="viendo === index" class="overflow-auto w-screen h-screen" @close="cerrarModales()">
                     <figure
-                        class="overflow-hidden flex flex-col lg:flex-row w-full h-full relative"
+                        class="flex flex-col lg:flex-row w-full relative"
                     >
                         <div
                             @click.stop="mostrarImagen((index + 1) % N)"
-                            class="cursor-pointer rounded-full w-12 h-12 flex justify-center items-center z-50 absolute inset-y-1/2 right-2 sm:right-8 bg-black text-white text-lg font-bold opacity-50 hover:opacity-100"
+                            class="cursor-pointer rounded-full w-12 h-12 flex justify-center items-center z-50 fixed bottom-9 lg:bottom-[45%] right-2 lg:right-[520px] sm:right-8 bg-black text-white text-lg font-bold opacity-20 hover:opacity-100"
                         >&gt;</div>
                         <div
                             @click.stop="mostrarImagen((index - 1 + N) % N)"
-                            class="cursor-pointer rounded-full w-12 h-12 flex justify-center items-center z-50 absolute inset-y-1/2 left-2 sm:left-8 bg-black text-white text-lg font-bold opacity-50 hover:opacity-100"
+                            class="cursor-pointer rounded-full w-12 h-12 flex justify-center items-center z-50 fixed bottom-9 lg:bottom-[45%] left-2 sm:left-8 bg-black text-white text-lg font-bold opacity-20 hover:opacity-100"
                         >&lt;</div>
-                        <div
-                            class="image-container flex justify-center items-center overflow-auto w-full bg-gray-900 height-88vh lg:height-100vh"
+                        <VerticalCenter
+                            class="flex-shrink-0 image-container w-full bg-gray-900 height-88vh lg:height-100vh"
                         >
                             <LoaderImage
                                 :src="item.url"
-                                class="w-auto"
+                                class="figure-image w-auto"
                                 :width="width >= 1024 ? width - 310 : width"
                                 :height="width >= 1024 ?height:Math.ceil(height*.82)"
                                 :crop="false"
                             />
-                        </div>
+                        </VerticalCenter>
                         <figcaption
-                            class="overflow-auto text-lg flex-grow-0 max-w-full mx-auto w-[600px] space-y-12 bg-white p-2 sm:p-7 lg:p-12 height-12vh lg:height-100vh"
+                            class="text-lg flex-grow-0 max-w-full mx-auto w-[600px] space-y-12 bg-white p-2 sm:p-7 lg:p-12 h-full"
                         >
                             <div class="space-y-3 sm:space-y-7">
                                 <div if="item.titulo" class="title">
@@ -86,7 +87,6 @@
                                     data-numposts="5"
                                 />
                                 <TelegramComments
-                                    v-if="item.mostrando"
                                     class="w-full"
                                     :url="item.url"
                                 />
@@ -111,7 +111,7 @@
                         />
                     </figure>
                 </Modal>
-            </div>
+            </template>
         </Card>
     </Grid>
 </template>
@@ -152,7 +152,6 @@ export default {
     watch: {
         itemsJSON(newValue) {
             this.viendo = -1
-            console.log('itemsjso compute')
         }
     },
     mounted() {
@@ -190,16 +189,24 @@ figcaption .description {
 }
 .height-88vh {
     min-height: 82vh;
-    max-height: 82vh;
+    height: 82vh;
 }
 .height-12vh {
     min-height: 18vh;
-    max-height: 18vh;
+    height: 18vh;
 }
 @screen lg {
     .lg\:height-100vh {
+        height: 100%;
         min-height: 100vh;
-        max-height: 100vh;
     }
+}
+
+img.figure-image {
+    object-fit: contain;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 </style>

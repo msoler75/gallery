@@ -29,6 +29,13 @@ body {
     padding: 0;
 }
 
+
+  html, body {height: 100%}
+  #__nuxt, #__layout, #main {min-height: 100%}
+img {
+max-width: 100%;
+}
+
 body,
 #__nuxt,
 #__layout {
