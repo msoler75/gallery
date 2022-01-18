@@ -41,6 +41,10 @@ export default {
     },
     crop(newValue) {
       this.prepareImage()
+    },
+    src(newValue) {
+      this.isLoaded = false
+      this.prepareImage()
     }
   },
   created() {

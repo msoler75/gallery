@@ -7,7 +7,7 @@ export default {
 
   
   server: {
-    port: 51234 // default: 3000
+    port: process.env.PORT || 51234 // default: 3000
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -70,7 +70,8 @@ export default {
     // https://go.nuxtjs.dev/pwa
     // '@nuxtjs/pwa',
     // '@nuxt/image',
-    'vue-scrollto/nuxt'
+    'vue-scrollto/nuxt',
+    '@nuxtjs/axios'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -88,7 +89,7 @@ export default {
   },
 
   router: {
-    // base: process.env.BASE_ROUTE_PATH || '/utg/arte/convocatoria2021/'
+    base: process.env.BASE_ROUTE_PATH || '/utg/arte/convocatoria2021/'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

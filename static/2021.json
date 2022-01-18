@@ -1,441 +1,497 @@
 {
-    "Dibujos":[
-       {
-          "url":"dibujo-y-pintura/Adimensionalidad por No siempre es la pm.jpg",
-          "autor":"No Siempre Es La Pm",
-          "titulo":"Adimensionalidad",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/Caretas por No siempre es la pm.jpg",
-          "autor":"No Siempre Es La Pm",
-          "titulo":"Caretas",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/Cuento de Navidad de Icotrem de No siempre es la pm.jpg",
-          "autor":"No Siempre Es La Pm",
-          "titulo":"Cuento de Navidad de Icotrem",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/Cyborgs por No siempre es la pm.jpg",
-          "autor":"No Siempre Es La Pm",
-          "titulo":"Cyborgs",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/Divulgación por No siempre es la pm.jpg",
-          "autor":"No Siempre Es La Pm",
-          "titulo":"Divulgación",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/El gran castaño, abrazando las dos dimensiones por Electron Pm.jpg",
-          "autor":"Electrón Pm",
-          "titulo":"El gran castaño, abrazando las dos dimensiones",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/El meteorito que trajo la semilla del castaño de No siempre es la pm.jpg",
-          "autor":"No Siempre Es La Pm",
-          "titulo":"El meteorito que trajo la semilla del castaño",
-          "descripcion":"",
-          "tags":[
-             "cuentos"
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/Equilibrio por No siempre es la pm.jpg",
-          "autor":"No Siempre Es La Pm",
-          "titulo":"Equilibrio",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/Esfera Azul por Junto a ti la pm.jpg",
-          "autor":"Junto a Ti La Pm",
-          "titulo":"Esfera Azul",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/Extrapolaciones por No siempre es la pm.jpg",
-          "autor":"No Siempre Es La Pm",
-          "titulo":"Extrapolaciones",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/Humildad  por No siempre es la pm.jpg",
-          "titulo":"Humildad",
-          "autor":"No Siempre Es La Pm",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/Infradimensiones por No siempre es la pm.jpg",
-          "titulo":"Infradimensiones",
-          "autor":"No Siempre Es La Pm",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/La microparticula curiosa de No siempre es la pm.jpg",
-          "titulo":"La microparticula curiosa",
-          "autor":"No Siempre Es La Pm",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/La pata del elefante por No siempre es la pm.jpg",
-          "titulo":"La pata del elefante",
-          "autor":"No Siempre Es La Pm",
-          "descripcion":"",
-          "tags":[
-             "cuentos"
-          ]
-       },
-       {
-        "url":"dibujo-y-pintura/Alien por Mejor esperar la pm.jpg",
-        "autor":"Mejor Esperar La Pm",
-        "titulo":"Mujer",
-        "descripcion":"Está dibujada sobre una piedra blanca que encontré cerca de mi casa, me fui guiando con la observando de las líneas que encontraba en la piedra, hasta culminar en el rostro de una mujer.",
-        "tags":[
-           
-        ]
-     },
-       {
-          "url":"dibujo-y-pintura/Las tres agujas por No siempre es la pm.jpg",
-          "autor":"No Siempre Es La Pm",
-          "titulo":"Las tres agujas",
-          "descripcion":"",
-          "tags":[
-             "cuentos"
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/Muul Águila GTI por No siempre es la pm.jpg",
-          "autor":"No Siempre Es La Pm",
-          "titulo":"Muul Águila GTI",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/Muul Águila por No siempre es la pm.jpg",
-          "autor":"No Siempre Es La Pm",
-          "titulo":"Muul Águila",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/Muulasterio Tegoyo por En buenas manos la pm.jpg",
-          "autor":"En Buenas Manos La Pm",
-          "titulo":"Muulasterio Tegoyo",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/No siempre es la pm.jpg",
-          "autor":"No Siempre Es La Pm",
-          "titulo":"",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/No siempre es la pm1.jpg",
-          "autor":"No Siempre Es La Pm",
-          "titulo":"",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/No siempre es la pm2.jpg",
-          "autor":"No Siempre Es La Pm",
-          "titulo":"",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/No somos este cuerpo por No siempre es la pm.jpg",
-          "autor":"No Siempre Es La Pm",
-          "titulo":"No somos este cuerpo",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/Orden a mi cerebro por No siempre es la pm.jpg",
-          "autor":"No Siempre Es La Pm",
-          "titulo":"Orden a mi cerebro",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/Pez Vieja por Junto a ti la pm.jpg",
-          "autor":"Junto a Ti La Pm",
-          "titulo":"Pez Vieja",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/pintura usa el fango la pm.jpg",
-          "autor":"Usa el Fango La Pm",
-          "titulo":"",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/Pueblo Tseyor por No siempre es la pm.jpg",
-          "autor":"No Siempre Es La Pm",
-          "titulo":"Pueblo Tseyor",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/puerta interdimensional 1 en Tegoyo por En buenas manos la pm.jpg",
-          "autor":"En Buenas Manos La Pm",
-          "titulo":"puerta interdimensional en Tegoyo",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/puerta interdimensional 2 en Tegoyo por En buenas manos la pm.jpg",
-          "autor":"En Buenas Manos La Pm",
-          "titulo":"puerta interdimensional 2 en Tegoyo",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/Puzle por No siempre es la pm.jpg",
-          "autor":"No Siempre Es La Pm",
-          "titulo":"Puzle",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/Silencio interior por No siempre es la pm.jpg",
-          "autor":"No Siempre Es La Pm",
-          "titulo":"Silencio interior",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/Tortuga sin pelo por No siempre es la pm.jpg",
-          "autor":"No Siempre Es La Pm",
-          "titulo":"Tortuga sin pelo",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/Viniste de las Estrellas por No siempre es la pm.jpg",
-          "autor":"No Siempre Es La Pm",
-          "titulo":"Viniste de las Estrellas",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/volcan del abducción por En buenas manos la pm.jpg",
-          "autor":"En Buenas Manos La Pm",
-          "titulo":"volcan del abducción",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       },
-       {
-          "url":"dibujo-y-pintura/Voluntarios por No siempre es la pm.jpg",
-          "autor":"No Siempre Es La Pm",
-          "titulo":"Voluntarios",
-          "descripcion":"",
-          "tags":[
-             
-          ]
-       }
-    ],
-    "Fotografía":
-       {
-          "Flores@Junto a ti la pm":[
-             {
-                "folder":"fotografia/flores-junto-a-ti-la-pm",
-                "autor":"Junto a Ti La Pm",
-                "titulo":"",
-                "descripcion":"",
-                "tags":[
-                   
-                ],
-                "images":[
-                   "1.png",
-                   "2.png",
-                   "3.png",
-                   "4.png",
-                   "5.png",
-                   "6.png"
-                ]
-             }
-          ],
-          "Instantes@Junto a ti la pm":[
-             {
-                "folder":"fotografia/instantes-junto-a-ti-la-pm",
-                "autor":"Junto a Ti La Pm",
-                "titulo":"",
-                "descripcion":"",
-                "tags":[
-                   
-                ],
-                "images":[
-                   "1.png",
-                   "2.png",
-                   "3.png",
-                   "4.png",
-                   "5.png",
-                   "6.png",
-                   "7.png",
-                   "8.png",
-                   "9.png",
-                   "10.png",
-                   "11.png",
-                   "12.png",
-                   "13.png",
-                   "14.png",
-                   "15.png",
-                   "16.png",
-                   "17.png",
-                   "18.png",
-                   "19.png",
-                   "20.png",
-                   "21.png",
-                   "22.png",
-                   "23.png",
-                   "24.png",
-                   "25.png",
-                   "26.png",
-                   "27.png",
-                   "28.png",
-                   "29.png",
-                   "30.png",
-                   "31.png",
-                   "32.png",
-                   "33.png",
-                   "34.png",
-                   "35.png",
-                   "36.png",
-                   "37.png",
-                   "38.png",
-                   "39.png",
-                   "40.png",
-                   "41.png",
-                   "42.png",
-                   "43.png",
-                   "44.png",
-                   "45.png",
-                   "46.png",
-                   "47.png",
-                   "48.png",
-                   "49.png",
-                   "50.png",
-                   "51.png",
-                   "52.png",
-                   "53.png",
-                   "54.png"
-                ]
-             }
-          ],
-          "Nubes@Junto a ti la pm":[
-             {
-                "folder":"fotografia/nubes-junto-a-ti-la-pm",
-                "autor":"Junto a Ti La Pm",
-                "titulo":"",
-                "descripcion":"",
-                "tags":[
-                   
-                ],
-                "images":[
-                   "1.png",
-                   "2.png",
-                   "3.png",
-                   "4.png"
-                ]
-             }
-          ],
-          "Orbes@Junto a ti la pm":[
-             {
-                "folder":"fotografia/orbes-junto-a-ti-la-pm",
-                "autor":"Junto a Ti La Pm",
-                "titulo":"",
-                "descripcion":"",
-                "tags":[
-                   
-                ],
-                "images":[
-                   "1.png",
-                   "2.png"
-                ]
-             }
-          ]
-       }
-    
- }
+  "Dibujos": [{
+      "url": "dibujo-y-pintura/El Tercer Ojo de En Buenas Manos La Pm.jpg",
+      "autor": "En Buenas Manos La Pm",
+      "titulo": "El Tercer Ojo",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Esferas en espiral de En Buenas Manos La Pm.jpg",
+      "autor": "En Buenas Manos La Pm",
+      "titulo": "Esferas en espiral",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Hermandad Cósmica de En Buenas Manos La Pm.jpg",
+      "autor": "En Buenas Manos La Pm",
+      "titulo": "Hermandad Cósmica",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Montaña Muul de En Buenas Manos La Pm.jpg",
+      "autor": "En Buenas Manos La Pm",
+      "titulo": "Montaña Muul",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Taller de unificación con los muul de En Buenas Manos La Pm.jpg",
+      "autor": "En Buenas Manos La Pm",
+      "titulo": "Taller de unificación con los Muul",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Taller el Fractal hacia el infinito de En Buenas Manos La Pm.jpg",
+      "autor": "En Buenas Manos La Pm",
+      "titulo": "Taller el Fractal hacia el infinito",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Azul de En Buenas Manos La Pm.jpg",
+      "autor": "En Buenas Manos La Pm",
+      "titulo": "",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+
+
+
+    {
+      "url": "dibujo-y-pintura/Adimensionalidad por No siempre es la pm.jpg",
+      "autor": "No Siempre Es La Pm",
+      "titulo": "Adimensionalidad",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Caretas por No siempre es la pm.jpg",
+      "autor": "No Siempre Es La Pm",
+      "titulo": "Caretas",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Cuento de Navidad de Icotrem de No siempre es la pm.jpg",
+      "autor": "No Siempre Es La Pm",
+      "titulo": "Cuento de Navidad de Icotrem",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Cyborgs por No siempre es la pm.jpg",
+      "autor": "No Siempre Es La Pm",
+      "titulo": "Cyborgs",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Divulgación por No siempre es la pm.jpg",
+      "autor": "No Siempre Es La Pm",
+      "titulo": "Divulgación",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/El gran castaño, abrazando las dos dimensiones por Electron Pm.jpg",
+      "autor": "Electrón Pm",
+      "titulo": "El gran castaño, abrazando las dos dimensiones",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/El meteorito que trajo la semilla del castaño de No siempre es la pm.jpg",
+      "autor": "No Siempre Es La Pm",
+      "titulo": "El meteorito que trajo la semilla del castaño",
+      "descripcion": "",
+      "tags": [
+        "cuentos"
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Equilibrio por No siempre es la pm.jpg",
+      "autor": "No Siempre Es La Pm",
+      "titulo": "Equilibrio",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Esfera Azul por Junto a ti la pm.jpg",
+      "autor": "Junto a Ti La Pm",
+      "titulo": "Esfera Azul",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Extrapolaciones por No siempre es la pm.jpg",
+      "autor": "No Siempre Es La Pm",
+      "titulo": "Extrapolaciones",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Humildad  por No siempre es la pm.jpg",
+      "titulo": "Humildad",
+      "autor": "No Siempre Es La Pm",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Infradimensiones por No siempre es la pm.jpg",
+      "titulo": "Infradimensiones",
+      "autor": "No Siempre Es La Pm",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/La microparticula curiosa de No siempre es la pm.jpg",
+      "titulo": "La microparticula curiosa",
+      "autor": "No Siempre Es La Pm",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/La pata del elefante por No siempre es la pm.jpg",
+      "titulo": "La pata del elefante",
+      "autor": "No Siempre Es La Pm",
+      "descripcion": "",
+      "tags": [
+        "cuentos"
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Alien por Mejor esperar la pm.jpg",
+      "autor": "Mejor Esperar La Pm",
+      "titulo": "Mujer",
+      "descripcion": "Está dibujada sobre una piedra blanca que encontré cerca de mi casa, me fui guiando con la observando de las líneas que encontraba en la piedra, hasta culminar en el rostro de una mujer.",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Las tres agujas por No siempre es la pm.jpg",
+      "autor": "No Siempre Es La Pm",
+      "titulo": "Las tres agujas",
+      "descripcion": "",
+      "tags": [
+        "cuentos"
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Muul Águila GTI por No siempre es la pm.jpg",
+      "autor": "No Siempre Es La Pm",
+      "titulo": "Muul Águila GTI",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Muul Águila por No siempre es la pm.jpg",
+      "autor": "No Siempre Es La Pm",
+      "titulo": "Muul Águila",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Muulasterio Tegoyo por En buenas manos la pm.jpg",
+      "autor": "En Buenas Manos La Pm",
+      "titulo": "Muulasterio Tegoyo",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/No siempre es la pm.jpg",
+      "autor": "No Siempre Es La Pm",
+      "titulo": "",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/No siempre es la pm1.jpg",
+      "autor": "No Siempre Es La Pm",
+      "titulo": "",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/No siempre es la pm2.jpg",
+      "autor": "No Siempre Es La Pm",
+      "titulo": "",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/No somos este cuerpo por No siempre es la pm.jpg",
+      "autor": "No Siempre Es La Pm",
+      "titulo": "No somos este cuerpo",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Orden a mi cerebro por No siempre es la pm.jpg",
+      "autor": "No Siempre Es La Pm",
+      "titulo": "Orden a mi cerebro",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Pez Vieja por Junto a ti la pm.jpg",
+      "autor": "Junto a Ti La Pm",
+      "titulo": "Pez Vieja",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/pintura usa el fango la pm.jpg",
+      "autor": "Usa el Fango La Pm",
+      "titulo": "Hermandad",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Pueblo Tseyor por No siempre es la pm.jpg",
+      "autor": "No Siempre Es La Pm",
+      "titulo": "Pueblo Tseyor",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/puerta interdimensional 1 en Tegoyo por En buenas manos la pm.jpg",
+      "autor": "En Buenas Manos La Pm",
+      "titulo": "puerta interdimensional en Tegoyo",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/puerta interdimensional 2 en Tegoyo por En buenas manos la pm.jpg",
+      "autor": "En Buenas Manos La Pm",
+      "titulo": "puerta interdimensional 2 en Tegoyo",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Puzle por No siempre es la pm.jpg",
+      "autor": "No Siempre Es La Pm",
+      "titulo": "Puzle",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Silencio interior por No siempre es la pm.jpg",
+      "autor": "No Siempre Es La Pm",
+      "titulo": "Silencio interior",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Tortuga sin pelo por No siempre es la pm.jpg",
+      "autor": "No Siempre Es La Pm",
+      "titulo": "Tortuga sin pelo",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Viniste de las Estrellas por No siempre es la pm.jpg",
+      "autor": "No Siempre Es La Pm",
+      "titulo": "Viniste de las Estrellas",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/volcan del abducción por En buenas manos la pm.jpg",
+      "autor": "En Buenas Manos La Pm",
+      "titulo": "volcan del abducción",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Voluntarios por No siempre es la pm.jpg",
+      "autor": "No Siempre Es La Pm",
+      "titulo": "Voluntarios",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    }
+  ],
+  "Fotografía": {
+    "Flores@Junto a ti la pm": [{
+      "folder": "fotografia/flores-junto-a-ti-la-pm",
+      "autor": "Junto a Ti La Pm",
+      "titulo": "",
+      "descripcion": "",
+      "tags": [
+
+      ],
+      "images": [
+        "1.png",
+        "2.png",
+        "3.png",
+        "4.png",
+        "5.png",
+        "6.png"
+      ]
+    }],
+    "Instantes@Junto a ti la pm": [{
+      "folder": "fotografia/instantes-junto-a-ti-la-pm",
+      "autor": "Junto a Ti La Pm",
+      "titulo": "",
+      "descripcion": "",
+      "tags": [
+
+      ],
+      "images": [
+        "1.png",
+        "2.png",
+        "3.png",
+        "4.png",
+        "5.png",
+        "6.png",
+        "7.png",
+        "8.png",
+        "9.png",
+        "10.png",
+        "11.png",
+        "12.png",
+        "13.png",
+        "14.png",
+        "15.png",
+        "16.png",
+        "17.png",
+        "18.png",
+        "19.png",
+        "20.png",
+        "21.png",
+        "22.png",
+        "23.png",
+        "24.png",
+        "25.png",
+        "26.png",
+        "27.png",
+        "28.png",
+        "29.png",
+        "30.png",
+        "31.png",
+        "32.png",
+        "33.png",
+        "34.png",
+        "35.png",
+        "36.png",
+        "37.png",
+        "38.png",
+        "39.png",
+        "40.png",
+        "41.png",
+        "42.png",
+        "43.png",
+        "44.png",
+        "45.png",
+        "46.png",
+        "47.png",
+        "48.png",
+        "49.png",
+        "50.png",
+        "51.png",
+        "52.png",
+        "53.png",
+        "54.png"
+      ]
+    }],
+    "Nubes@Junto a ti la pm": [{
+      "folder": "fotografia/nubes-junto-a-ti-la-pm",
+      "autor": "Junto a Ti La Pm",
+      "titulo": "",
+      "descripcion": "",
+      "tags": [
+
+      ],
+      "images": [
+        "1.png",
+        "2.png",
+        "3.png",
+        "4.png"
+      ]
+    }],
+    "Orbes@Junto a ti la pm": [{
+      "folder": "fotografia/orbes-junto-a-ti-la-pm",
+      "autor": "Junto a Ti La Pm",
+      "titulo": "",
+      "descripcion": "",
+      "tags": [
+
+      ],
+      "images": [
+        "1.png",
+        "2.png"
+      ]
+    }]
+  }
+
+}

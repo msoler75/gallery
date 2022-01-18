@@ -1,6 +1,6 @@
 <template>
     <Grid :class="viendo > -1 ? 'h-0 overflow-hidden' : 'overflow-y-auto'">
-        <Card v-for="(item, index) of itemsPrepared" :key="index" class="bg-gray text-center">
+        <Card v-for="(item, index) of itemsPrepared" :key="item.url" class="bg-gray text-center">
             <div
                 v-if="'ruta' in item"
                 @click="$emit('change', item.ruta)"
@@ -12,6 +12,7 @@
                     loading="lazy"
                     :width="Math.min(width, 400)"
                     :height="330"
+                    style="min-height: 330px"
                     :crop="true"
                 />
                 <h2 class="text-2xl font-bold p-5 mt-auto">{{ item.titulo }}</h2>
@@ -35,7 +36,7 @@
                             :crop="true"
                         />
                     </div>
-                    <div class="select-none my-2 text-lg cursor-pointer font-bold">{{ item.titulo }}</div>
+                    <div class="select-none my-2 text-lg cursor-pointer font-bold">{{ item.titulo || "Sin título" }}</div>
                     <div
                         class="select-none my-2 italic mb-4"
                         v-if="showAuthor && item.autor"
@@ -80,13 +81,13 @@
                                 </div>
                             </div>
                             <div class="w-full max-w-full">
-                                <div
-                                    class="fb-comments"
-                                    :data-href="item.url"
-                                    data-width="600"
-                                    data-numposts="5"
+                                <!-- 
+                                    <CoomentsFacebook
+                                    class="w-full"
+                                    :url="item.url"
                                 />
-                                <TelegramComments
+                                -->
+                                <CommentsTelegram
                                     class="w-full"
                                     :url="item.url"
                                 />
@@ -117,6 +118,7 @@
 </template>
 
 <script>
+import CoomentsFacebook from "./CoomentsFacebook.vue"
 export default {
     props: {
         items: [],
@@ -130,35 +132,35 @@ export default {
             imagenSiguiente: null,
             width: document.documentElement.clientWidth,
             height: document.documentElement.clientHeight
-        }
+        };
     },
     computed: {
         itemsJSON() {
-            return JSON.stringify(this.items)
+            return JSON.stringify(this.items);
         },
         N() {
-            return this.items.length
+            return this.items.length;
         },
         itemsPrepared() {
-            const r = []
+            const r = [];
             for (const item of this.items) {
-                let it = { ...item }
-                it.url = this.$config.basePathImages + it.url
-                r.push(it)
+                let it = { ...item };
+                it.url = this.$config.basePathImages + it.url;
+                r.push(it);
             }
-            return r
+            return r;
         },
     },
     watch: {
         itemsJSON(newValue) {
-            this.viendo = -1
+            this.viendo = -1;
         }
     },
     mounted() {
-        window.addEventListener('resize', this.getDimensions);
+        window.addEventListener("resize", this.getDimensions);
     },
     unmounted() {
-        window.removeEventListener('resize', this.getDimensions);
+        window.removeEventListener("resize", this.getDimensions);
     },
     methods: {
         getDimensions() {
@@ -166,11 +168,12 @@ export default {
             this.height = document.documentElement.clientHeight;
         },
         mostrarImagen(index) {
-            this.viendo = index
-            this.imagenSiguiente = (index + 1) % this.N
-            this.imagenAnterior = (index - 1 + this.N) % this.N
+            this.viendo = index;
+            this.imagenSiguiente = (index + 1) % this.N;
+            this.imagenAnterior = (index - 1 + this.N) % this.N;
         },
-    }
+    },
+    components: { CoomentsFacebook }
 }
 </script>
 

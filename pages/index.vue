@@ -5,7 +5,7 @@
     <div
       v-if="ruta"
       class="text-leftmax-w-full mx-auto -translate-y-10 cursor-pointer hover:text-underline inline-block py-1 px-3 m-9 rounded-lg hover:bg-blue-100 shadow bg-white w-auto"
-      @click="cambiarRuta(rutaPadre)"
+      @click="back()"
     >&lt; Volver</div>
     <client-only>
       <Galeria :items="actualItems" @change="onRuta" :showAuthor="!categoriaAutor" />
@@ -17,19 +17,7 @@
 <script>
 const TITULO = 'Galería de Arte TSEYOR'
 const SUBTITULO = 'Edición 2021'
-import itemsjson from '@/static/2021.json'
 export default {
-  head: {
-    script: [
-      {
-        src: "https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v12.0&appId=392974907402416&autoLogAppEvents=1",
-        nonce: "6kjHrXuq",
-        async: true,
-        defer: true,
-        crossorigin: "anonymous"
-      }
-    ]
-  },
   data() {
     return {
       titulo: TITULO,
@@ -41,24 +29,32 @@ export default {
       isFolder: true
     }
   },
+  async asyncData({ $axios }) {
+    const items = await $axios.$get('2021.json', {
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    })
+    return { items }
+  },
   created() {
     if (process.client) {
-      this.items = itemsjson
-    }
-    if(process.client) {
       window.addEventListener('popstate', this.handlePopState)
     };
   },
   destroyed() {
-    if(process.client) {
+    if (process.client) {
       window.removeEventListener('popstate', this.handlePopState)
     };
   },
-  mounted(){
+  mounted() {
     var stateObj = { rutaPrevia: this.ruta }
-      history.replaceState(stateObj, 'Galería')
+    history.replaceState(stateObj, 'Galería')
   },
   methods: {
+    back() {
+      history.back()
+    },
     handlePopState(g) {
       this.ruta = g.state.rutaPrevia
     },
@@ -137,50 +133,50 @@ export default {
           current = current[key]
         const [tit, autor] = key.split('@')
         this.titulo = tit
-        this.subtitulo = autor?'@'+autor:''
+        this.subtitulo = autor ? '@' + autor : ''
         this.categoriaAutor = autor
       }
     },
     subtitulo() {
       return this.ruta ? '' : 'Edición 2021'
+    },
   },
-},
-computed: {
-  expandedItems() {
-    return this.expandItems(this.items)
-  },
-  actualItems() {
-    let r = []
-    let current = this.expandedItems
-    let ruta = this.ruta || ''
-    // seguimos la estructura json como si fuera una ruta
-    if (ruta) {
-      const parts = ruta.split('/').filter(x => !!x)
-      for (const key of parts)
-        current = current[key]
-    }
-    for (const key in current) {
-      if (typeof key === 'string' && !key.match(/^\d+$/)) {
-        const [title, author] = key.split('@')
-        this.isFolder = true
-        let item =
-        {
-          "ruta": ruta + '/' + key,
-          "titulo": title,
-          "autor": author,
-          "url": this.findRandomImage(current[key]),
+  computed: {
+    expandedItems() {
+      return this.expandItems(this.items)
+    },
+    actualItems() {
+      let r = []
+      let current = this.expandedItems
+      let ruta = this.ruta || ''
+      // seguimos la estructura json como si fuera una ruta
+      if (ruta) {
+        const parts = ruta.split('/').filter(x => !!x)
+        for (const key of parts)
+          current = current[key]
+      }
+      for (const key in current) {
+        if (typeof key === 'string' && !key.match(/^\d+$/)) {
+          const [title, author] = key.split('@')
+          this.isFolder = true
+          let item =
+          {
+            "ruta": ruta + '/' + key,
+            "titulo": title,
+            "autor": author,
+            "url": this.findRandomImage(current[key]),
+          }
+          // this.prepareImages(item)
+          r.push(item)
         }
-        // this.prepareImages(item)
-        r.push(item)
+        else {
+          const item = current[key]
+          // this.prepareImages(item)
+          r.push({ ...item, mostrando: false })
+        }
       }
-      else {
-        const item = current[key]
-        // this.prepareImages(item)
-        r.push({ ...item, mostrando: false })
-      }
+      return r
     }
-    return r
   }
-}
 }
 </script>
