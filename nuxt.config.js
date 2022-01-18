@@ -92,6 +92,10 @@ export default {
     base: process.env.BASE_ROUTE_PATH || '/utg/arte/convocatoria2021/'
   },
 
+  axios: {
+    baseURL:  process.env.BASE_ROUTE_PATH || '/utg/arte/convocatoria2021/'
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
 

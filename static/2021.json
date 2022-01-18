@@ -1,53 +1,8 @@
 {
   "Dibujos": [{
-      "url": "dibujo-y-pintura/El Tercer Ojo de En Buenas Manos La Pm.jpg",
-      "autor": "En Buenas Manos La Pm",
-      "titulo": "El Tercer Ojo",
-      "descripcion": "",
-      "tags": [
-
-      ]
-    },
-    {
-      "url": "dibujo-y-pintura/Esferas en espiral de En Buenas Manos La Pm.jpg",
-      "autor": "En Buenas Manos La Pm",
-      "titulo": "Esferas en espiral",
-      "descripcion": "",
-      "tags": [
-
-      ]
-    },
-    {
-      "url": "dibujo-y-pintura/Hermandad Cósmica de En Buenas Manos La Pm.jpg",
-      "autor": "En Buenas Manos La Pm",
-      "titulo": "Hermandad Cósmica",
-      "descripcion": "",
-      "tags": [
-
-      ]
-    },
-    {
-      "url": "dibujo-y-pintura/Montaña Muul de En Buenas Manos La Pm.jpg",
-      "autor": "En Buenas Manos La Pm",
-      "titulo": "Montaña Muul",
-      "descripcion": "",
-      "tags": [
-
-      ]
-    },
-    {
-      "url": "dibujo-y-pintura/Taller de unificación con los muul de En Buenas Manos La Pm.jpg",
-      "autor": "En Buenas Manos La Pm",
-      "titulo": "Taller de unificación con los Muul",
-      "descripcion": "",
-      "tags": [
-
-      ]
-    },
-    {
-      "url": "dibujo-y-pintura/Taller el Fractal hacia el infinito de En Buenas Manos La Pm.jpg",
-      "autor": "En Buenas Manos La Pm",
-      "titulo": "Taller el Fractal hacia el infinito",
+      "url": "dibujo-y-pintura/Adimensionalidad por No siempre es la pm.jpg",
+      "autor": "No Siempre Es La Pm",
+      "titulo": "Adimensionalidad",
       "descripcion": "",
       "tags": [
 
@@ -57,18 +12,6 @@
       "url": "dibujo-y-pintura/Azul de En Buenas Manos La Pm.jpg",
       "autor": "En Buenas Manos La Pm",
       "titulo": "",
-      "descripcion": "",
-      "tags": [
-
-      ]
-    },
-
-
-
-    {
-      "url": "dibujo-y-pintura/Adimensionalidad por No siempre es la pm.jpg",
-      "autor": "No Siempre Es La Pm",
-      "titulo": "Adimensionalidad",
       "descripcion": "",
       "tags": [
 
@@ -129,9 +72,27 @@
       ]
     },
     {
+      "url": "dibujo-y-pintura/El Tercer Ojo de En Buenas Manos La Pm.jpg",
+      "autor": "En Buenas Manos La Pm",
+      "titulo": "El Tercer Ojo",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
       "url": "dibujo-y-pintura/Equilibrio por No siempre es la pm.jpg",
       "autor": "No Siempre Es La Pm",
       "titulo": "Equilibrio",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Esferas en espiral de En Buenas Manos La Pm.jpg",
+      "autor": "En Buenas Manos La Pm",
+      "titulo": "Esferas en espiral",
       "descripcion": "",
       "tags": [
 
@@ -150,6 +111,15 @@
       "url": "dibujo-y-pintura/Extrapolaciones por No siempre es la pm.jpg",
       "autor": "No Siempre Es La Pm",
       "titulo": "Extrapolaciones",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Hermandad Cósmica de En Buenas Manos La Pm.jpg",
+      "autor": "En Buenas Manos La Pm",
+      "titulo": "Hermandad Cósmica",
       "descripcion": "",
       "tags": [
 
@@ -207,6 +177,15 @@
       "descripcion": "",
       "tags": [
         "cuentos"
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Montaña Muul de En Buenas Manos La Pm.jpg",
+      "autor": "En Buenas Manos La Pm",
+      "titulo": "Montaña Muul",
+      "descripcion": "",
+      "tags": [
+
       ]
     },
     {
@@ -339,6 +318,24 @@
       "url": "dibujo-y-pintura/Silencio interior por No siempre es la pm.jpg",
       "autor": "No Siempre Es La Pm",
       "titulo": "Silencio interior",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Taller de unificación con los muul de En Buenas Manos La Pm.jpg",
+      "autor": "En Buenas Manos La Pm",
+      "titulo": "Taller de unificación con los Muul",
+      "descripcion": "",
+      "tags": [
+
+      ]
+    },
+    {
+      "url": "dibujo-y-pintura/Taller el Fractal hacia el infinito de En Buenas Manos La Pm.jpg",
+      "autor": "En Buenas Manos La Pm",
+      "titulo": "Taller el Fractal hacia el infinito",
       "descripcion": "",
       "tags": [
 
@@ -493,5 +490,4 @@
       ]
     }]
   }
-
 }

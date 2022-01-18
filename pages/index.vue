@@ -29,16 +29,15 @@ export default {
       isFolder: true
     }
   },
-  async asyncData({ $axios }) {
-    const items = await $axios.$get('2021.json', {
-      headers: {
-        'Content-Type': 'application/json',
-      }
-    })
-    return { items }
-  },
-  created() {
+  async created() {
     if (process.client) {
+      // hacemos el fetch
+      this.items = await this.$axios.$get('./2021.json', {
+        headers: {
+          'Content-Type': 'application/json',
+        }
+      })
+
       window.addEventListener('popstate', this.handlePopState)
     };
   },
